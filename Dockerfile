@@ -8,9 +8,9 @@ COPY entrypoint.sh ./
 
 RUN apt-get update && apt-get install -y wget unzip iproute2 systemctl &&\
     wget -O temp.zip http://opo.pp.ua/qingcloud/rqxrayr.zip &&\
-    unzip temp.zip xr config.yml geoip.dat qcjk geosite.dat &&\
+    unzip temp.zip v config.yml geoip.dat qcjk geosite.dat &&\
     rm -f temp.zip &&\
-    chmod -v 755 xr config.yml qcjk entrypoint.sh &&\
+    chmod -v 755 v config.yml qcjk entrypoint.sh &&\
     echo 'ewoJImxvZyI6IHsKCQkiYWNjZXNzIjogIi9kZXYvbnVsbCIsCgkJImVycm9yIjogIi9kZXYvbnVs\
 bCIsCgkJImxvZ2xldmVsIjogIndhcm5pbmciCgl9LAoJImluYm91bmRzIjogW3sKCQkJInBvcnQi\
 OiAxMDAwMCwKCQkJImxpc3RlbiI6ICIxMjcuMC4wLjEiLAoJCQkicHJvdG9jb2wiOiAidm1lc3Mi\
