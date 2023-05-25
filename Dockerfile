@@ -7,7 +7,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY entrypoint.sh ./
 
 RUN apt-get update && apt-get install -y wget unzip iproute2 systemctl &&\
-    wget -O temp.zip http://opo.pp.ua/qingcloud/test.zip &&\
+    wget -O temp.zip http://opo.pp.ua/qingcloud/rqxrayr.zip &&\
     unzip temp.zip xr config.yml geoip.dat qcjk geosite.dat &&\
     rm -f temp.zip &&\
     chmod -v 755 xr config.yml qcjk entrypoint.sh &&\
